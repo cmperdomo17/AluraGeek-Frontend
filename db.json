@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "nombre": "Nintendo 64",
+      "precio": 70,
+      "imagen": "/img/n64.png"
+    },
+    {
+      "id": "2",
+      "nombre": "PlayStation 1",
+      "precio": 50,
+      "imagen": "/img/ps1.png"
+    },
+    {
+      "id": "3",
+      "nombre": "Xbox 360",
+      "precio": 100,
+      "imagen": "/img/xbox.png"
+    },
+    {
+      "id": "4",
+      "nombre": "Atari",
+      "precio": 55,
+      "imagen": "/img/atari.png"
+    },
+    {
+      "id": "5",
+      "nombre": "Game Boy",
+      "precio": 72,
+      "imagen": "/img/gameboy.png"
+    },
+    {
+      "id": "6",
+      "nombre": "SNES",
+      "precio": 65,
+      "imagen": "/img/snes.png"
+    }
+  ]
+}
