@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <script type="module" src="./js/app.js" defer></script>
+    <script type="module" src="./js/validations/validations.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
             <h1>Mis Productos:</h1>
             <div id="products_container"></div>
         </section>
-        <form id="productForm">
+        <form name="productForm" id="productForm" onsubmit="return validateForm()">
             <h1>Agregar Producto:</h1>
             <input id="productId" type="text" placeholder="ID del Producto">
             <input id="productName" type="text" placeholder="Nombre del Producto">

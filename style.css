@@ -127,7 +127,7 @@ form input:active, form input:focus {
 
 .card_title {
     display: flex;
-    gap: 6px;
+    gap: 2px;
     text-align: center;
     font-size: .7rem;
 }
