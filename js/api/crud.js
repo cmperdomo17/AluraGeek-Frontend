@@ -43,6 +43,12 @@ document.getElementById('productForm').addEventListener('submit', async (event) 
         imagen: imageUrl
     };
     try {
+        const products = await getProducts();
+        const productExists = products.find(p => p.id === id);
+        if(productExists) {
+            alert('El producto con id: ' + id + ' ya existe');
+            return;
+        } 
         const response = await createProduct(product);
         console.log(response);
     } catch (error) {
@@ -57,6 +63,15 @@ async function deleteProduct(id) {
     
     if (!response.ok) {
         throw new Error('Error al eliminar el producto');
+    }
+    return response.json();
+}
+
+async function getProducts() {
+    const response = await fetch('http://localhost:3000/products');
+    
+    if (!response.ok) {
+        throw new Error('Error al obtener los productos');
     }
     return response.json();
 }
